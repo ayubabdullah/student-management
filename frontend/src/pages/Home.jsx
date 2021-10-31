@@ -1,13 +1,13 @@
-import { Table } from "react-bootstrap";
 import React, { useEffect } from "react";
+import { Table, Button } from "react-bootstrap";
 import { v4 as uuidv4 } from "uuid";
 import Modal from "react-modal";
+import { AiOutlineClose } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { getStudents } from "../redux/studentSlice";
 import CreateForm from "../components/CreateForm";
 import Student from "../components/Student";
-import { Button } from "react-bootstrap";
-import { AiOutlineClose } from "react-icons/ai";
+
 
 Modal.setAppElement("#root");
 
