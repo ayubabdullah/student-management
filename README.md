@@ -1,30 +1,36 @@
-# to install all the dependencies run following commands
+# Student Management
 
-## in root dir
-### npm install
+A simple management system
 
-## in frontend dir
-### npm install
+## Installation
+
+run this command in the root of each folder ( express-app, backend, frontend )
+
+```bash
+npm install
+```
 
 
-## in backend dir
-### npm install
 
-# to start the application
-## in the root of your application (not in frontend dir or backend dir)
+## Start
+run this command in the root of express-app
 
-### npm start
-# technologies
+```bash
+npm start
+```
 
-## backend:
-### express js 
-### mongodb
+## Technologies
+### Backend
+Express js  
+MongoDB
 
-## frontend:
-### react js, 
-### redux toolkit for state management, 
-### React Bootstrap for Styling, 
-### Formik and Yup for form validation, 
-### react-icons for icons, 
-### react-modal for modals, 
-### uuid for generate unique id, 
+### Frontend
+ React js  
+ Redux toolkit for state management  
+ React Bootstrap for Styling  
+ Formik and Yup for form validation  
+ react-icons for icons  
+ react-modal for modals  
+ uuid for generate unique id
+## Auther
+Ayub Abdullah
