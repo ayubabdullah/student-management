@@ -1,10 +1,21 @@
+to install all the dependencies run following commands
+
+in root dir
+### npm install
+
+in frontend dir
+### npm install
+
+
+in backend dir
+### npm install
 to start the application use 'npm start' in the root of your application (not in frontend dir or backend dir)
 
-technologies
+# technologies
 
-backend:
-express js, 
-mongodb, 
+## backend:
+### express js, 
+### mongodb, 
 
 frontend:
 react js, 
