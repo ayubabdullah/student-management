@@ -14,23 +14,6 @@ exports.getStudents = asyncHandler(async (req, res, next) => {
   });
 });
 
-// @desc      Get single Student
-// @route     GET /students/:id
-exports.getStudent = asyncHandler(async (req, res, next) => {
-  const student = await Student.findById(req.params.id);
-
-  if (!student) {
-    return next(
-      new ErrorResponse(`Student not found with id: ${req.params.id}`)
-    );
-  }
-
-  res.status(200).json({
-    success: true,
-    data: student,
-  });
-});
-
 // @desc      Create Student
 // @route     POST /students
 exports.createStudent = asyncHandler(async (req, res, next) => {

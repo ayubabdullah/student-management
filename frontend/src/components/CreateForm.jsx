@@ -3,8 +3,8 @@ import { Formik } from "formik";
 import * as Yup from "yup";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { createStudent } from "../redux/studentSlice";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { createStudent } from "../redux/studentSlice";
 
 const schema = Yup.object().shape({
   name: Yup.string().required(),
@@ -17,11 +17,13 @@ const schema = Yup.object().shape({
   department: Yup.string().required(),
   DOB: Yup.date().required(),
 });
+
 export const CreateForm = ({ setIsOpenCreateModal }) => {
   const students = useSelector((state) => state.students);
   const [isShowPassword, setIsShowPassword] = useState(false);
 
   const dispatch = useDispatch();
+
   const handleSubmit = ({ name, email, password, department, DOB }) => {
     const student = { name, email, password, department, DOB };
     dispatch(createStudent(student));

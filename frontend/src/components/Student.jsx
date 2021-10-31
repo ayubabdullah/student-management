@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-
+import { Button } from "react-bootstrap";
 import Modal from "react-modal";
 import { useDispatch } from "react-redux";
 import { AiFillDelete, AiFillEdit, AiOutlineClose } from "react-icons/ai";
 import { deleteStudent } from "../redux/studentSlice";
 import UpdateForm from "./UpdateForm";
 import formatted from "../utils/formatDate";
-import { Button } from "react-bootstrap";
 
 const Student = ({ student }) => {
   const [isOpenUpdateModal, setIsOpenUpdateModal] = useState(false);
@@ -27,7 +26,7 @@ const Student = ({ student }) => {
       <td>{formatted(student.DOB)}</td>
       <td>
         <Button
-          className='me-1'
+          className="me-1"
           variant="outline-danger"
           onClick={() => handleDelete(student._id)}
         >

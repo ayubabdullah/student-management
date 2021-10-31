@@ -24,8 +24,7 @@ const StudentSchema = new mongoose.Schema({
   },
   DOB: {
     type: Date,
-      required: true,
-    default: Date.now
+      required: true
   },
   createdAt: {
     type: Date,

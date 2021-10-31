@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { updateStudent } from "../redux/studentSlice";
 import { Form, Button, InputGroup } from "react-bootstrap";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import { useDispatch } from "react-redux";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { updateStudent } from "../redux/studentSlice";
 import formatted from "../utils/formatDate";
 
 const schema = Yup.object().shape({
@@ -138,7 +138,9 @@ const UpdateForm = ({ setIsOpenUpdateModal, currentStudent }) => {
             <Form.Control.Feedback type="invalid">
               Please enter a valid Date
             </Form.Control.Feedback>
-            <Form.Text className="text-muted">Current DOB: {formatted(values.dob)}</Form.Text>
+            <Form.Text className="text-muted">
+              Current DOB: {formatted(values.dob)}
+            </Form.Text>
           </Form.Group>
 
           <div className="d-grid gap-2">
