@@ -1,0 +1,16 @@
+{
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^6.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "concurrently \"cd frontend && npm start\" \"cd backend && npm start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
