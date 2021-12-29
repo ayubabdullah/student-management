@@ -1,36 +1,52 @@
-# Student Management
 
-A simple management system
+# Express / Student Management
 
-## Installation
+A simple student management system with CRUD (create, read, update, delete) functionality
 
-run this command in the root of each folder ( express-app, backend, frontend )
+
+## Ayub Abdullah
+
+- [@Ayub Abdullah](https://www.github.com/ayubabdullah)
+
+
+## Tech Stack
+
+**client:** 
+- react 
+- react-bootstarp
+- react-icons
+- react-modal 
+- css
+- redux toolkit
+- formik
+- yup
+- uuid
+**server:**
+- express
+- mongoDB
+- mongoose
+- cors
+- dotenv
+
+
+
+## Run Locally
+
+
+Go to the project directory
 
 ```bash
-npm install
+  cd my-project
 ```
 
+run this command in the root of each folder ( root, backend, frontend )
+```bash
+  npm install
+```
 
-
-## Start
-run this command in the root of express-app
+run this command in the root of the project
 
 ```bash
-npm start
+  npm run start
 ```
 
-## Technologies
-### Backend
-Express js  
-MongoDB
-
-### Frontend
- React js  
- Redux toolkit for state management  
- React Bootstrap for Styling  
- Formik and Yup for form validation  
- react-icons for icons  
- react-modal for modals  
- uuid for generate unique id
-## Auther
-Ayub Abdullah
