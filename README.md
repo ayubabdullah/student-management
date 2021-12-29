@@ -21,6 +21,7 @@ A simple student management system with CRUD (create, read, update, delete) func
 - formik
 - yup
 - uuid
+
 **server:**
 - express
 - mongoDB
